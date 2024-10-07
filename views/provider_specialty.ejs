@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Providers by Specialty</title>
+</head>
+<body>
+    <h1>Providers by Specialty</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Provider Specialty</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% results.forEach((provider) => { %>
+                <tr>
+                    <td><%= provider.provider_specialty %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patients by First Name</title>
+</head>
+<body>
+    <h1>Patients by First Name</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% results.forEach((patient) => { %>
+                <tr>
+                    <td><%= patient.first_name %></td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</body>
+</html>
